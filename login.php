@@ -9,7 +9,7 @@ if(isset($_POST['submit']))
 {
 $loginsql = "SELECT * FROM logins WHERE username = '" . $_POST['userBox']. "' AND password = '" . sha1($_POST['passBox']) . "'";
 $loginres = mysqli_query($conn,$loginsql);
-$numrows = mysqli_num_rows($loginres);
+$numrows = mysqli_num_rows($loginres);fdgsdfgsg
 if($numrows == 1)
 {
 $loginrow = mysqli_fetch_assoc($loginres);
