@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_start();fdgdfgdf
 require("connection.php");
 if(isset($_SESSION['SESS_LOGGEDIN'])) {
 header("Location: " . $config_basedir);
