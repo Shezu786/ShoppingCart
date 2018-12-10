@@ -61,19 +61,17 @@ echo "<strong>Incorrect username/password</strong>";
 <?php
 }
 require("footer.php");
-?>
-<?php
-	if(isset($_POST["submit"])){
-		$username=$_POST["userBox"];
-		$password=$_POST["passBox"];
-		if($username=="" && $password==""){
-			echo "Please Enter Username and Password for login";
-		}
-		elseif($username==""){
-			echo "Please Enter Username";
-		}
-		elseif($password==""){
-			echo "Please Enter Password";
-		}
+if(isset($_POST["submit"])){
+	$username=$_POST["userBox"];
+	$password=$_POST["passBox"];
+	if($username=="" && $password==""){
+		echo "Please Enter Username and Password for login";
 	}
+	elseif($username==""){
+		echo "Please Enter Username";
+	}
+	elseif($password==""){
+		echo "Please Enter Password";
+	}
+}
 ?>
